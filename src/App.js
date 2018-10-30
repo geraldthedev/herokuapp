@@ -11,10 +11,7 @@ class App extends Component {
       </div>
       </div>
 
-<<<<<<< HEAD
-=======
 
->>>>>>> b22efc9b40de0b881c1f0d10f98ef65cc0be1c94
     );
 
 
