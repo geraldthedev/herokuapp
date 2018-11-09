@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import './data.js';
 
 
 class Ano extends Component{
@@ -13,6 +14,8 @@ class Ano extends Component{
         );
 
     }
+
+
 }
 
 export default Ano;
