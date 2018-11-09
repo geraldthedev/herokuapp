@@ -5,7 +5,11 @@ import './App.css';
 class Ano extends Component{
     render(){
         return(
-            <section className= "push"></section>
+            <div className="Ano">
+        <input></input>
+      </div>
+
+
         );
 
     }
