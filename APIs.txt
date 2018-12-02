@@ -1,1 +1,8 @@
-2Xw4TZUvSRVnbbtbZ6QFQtthuZujXPBWdv1tIKbM-nasa
+kUogpAAKJUl6Lu846gUCxaIrP18vgmPvDkPyfMDO-nasa
+
+ <ul>
+        {props.list.map(rocks => (
+        <li key={rocks.show.id}>
+        {rocks.show.name}</li>
+        ))}
+        </ul>

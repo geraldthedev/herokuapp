@@ -13,8 +13,11 @@ class Ano extends Component{
         return(
             <div className="Ano">
         <Material message= "This will load asteroid data" />
+
         
-        <Blocks />
+
+        <Blocks message="asteroid data will load here" />
+
       </div>
 
 

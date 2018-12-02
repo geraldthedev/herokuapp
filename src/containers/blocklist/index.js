@@ -1,17 +1,15 @@
 import React from 'react';
+import Blocks from '../blocks';
 
 
 
 const BlockList = (props) => {
     return(
         <div>
-        <ul>
-        {props.list.map(rocks=>(
-        <li>{rocks.show.name}</li>
-        ))}
-        </ul>
+       
         </div>
     )
+
 }
 
 export default BlockList;
