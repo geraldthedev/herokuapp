@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import Blocks from './containers/blocks/index';
+import Blocks from ''
 import 'whatwg-fetch';
-import './App.css';
-import './data.js';
-import Material from './data.js';
+import '.App/App.css';
+import Material from '../Material/index';
 
 
 class Ano extends Component{
@@ -14,7 +13,7 @@ class Ano extends Component{
             <div className="Ano">
         <Material message= "This will load asteroid data" />
 
-        
+
 
         <Blocks message="asteroid data will load here" />
 

@@ -18,12 +18,12 @@ class Blocks extends Component{
         return(
 
             <div>
-            
+
             <BlockList list={this.state.near_earth_objects} />
             {this.state.near_earth_objects.length}
             </div>
 
-        )
+        );
     }
 
 }

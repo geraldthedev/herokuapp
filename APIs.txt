@@ -6,3 +6,11 @@ kUogpAAKJUl6Lu846gUCxaIrP18vgmPvDkPyfMDO-nasa
         {rocks.show.name}</li>
         ))}
         </ul>
+
+.then(json => console.log(json))
+ <ul>
+        {props.list.map(near_earth_objects => (
+        <li>
+        {near_earth_objects.neo_reference_id}</li>
+        ))}
+        </ul>
