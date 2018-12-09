@@ -14,3 +14,9 @@ kUogpAAKJUl6Lu846gUCxaIrP18vgmPvDkPyfMDO-nasa
         {near_earth_objects.neo_reference_id}</li>
         ))}
         </ul>
+
+e222df7542f14332bbc46a3fde194820-news
+
+ fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=e222df7542f14332bbc46a3fde194820')
+        .then(response => response.json())
+        .then(json => this.setState({ TotalResults: json }));
