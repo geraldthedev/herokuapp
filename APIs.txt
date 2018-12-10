@@ -7,6 +7,30 @@ kUogpAAKJUl6Lu846gUCxaIrP18vgmPvDkPyfMDO-nasa
         ))}
         </ul>
 
+<<<<<<< HEAD
 e222df7542f14332bbc46a3fde194820-news
 
 .then(json => console.log(json))
+=======
+.then(json => console.log(json))
+ <ul>
+        {props.list.map(near_earth_objects => (
+        <li>
+        {near_earth_objects.neo_reference_id}</li>
+        ))}
+        </ul>
+
+e222df7542f14332bbc46a3fde194820-news
+
+ fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=e222df7542f14332bbc46a3fde194820')
+        .then(response => response.json())
+        .then(json => this.setState({ TotalResults: json }));
+
+         <ul>
+            {props.list.map(news =>(
+            <li>{news.articles.content}</li>
+            ))}
+            </ul>
+
+            {this.state.articles.content}
+>>>>>>> f55bb1cf4a7a71761c071a8affe119265395ef53
