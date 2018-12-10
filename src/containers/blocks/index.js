@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
-import BlockList from '../blocklist';
+import BlockList from '../blocklist/index';
 
 class Blocks extends Component{
 
     state ={
-    near_earth_objects: []
+    totalResults: []
 }
     componentDidMount(){
-        fetch('https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=kUogpAAKJUl6Lu846gUCxaIrP18vgmPvDkPyfMDO')
+        fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=e222df7542f14332bbc46a3fde194820')
         .then(response => response.json())
-        .then(json => console.log(json))
-        .then(json => this.setState({ near_earth_objects: json }));
+        .then(json => this.setState({ totalResults: json }));
 
     }
 
@@ -18,9 +17,9 @@ class Blocks extends Component{
         return(
 
             <div>
-            
-            <BlockList list={this.state.near_earth_objects} />
-            {this.state.near_earth_objects.length}
+
+            <BlockList list={this.totalResults} />
+          The length of the array is -  {this.state.totalResults.length}
             </div>
 
         )
