@@ -7,11 +7,6 @@ kUogpAAKJUl6Lu846gUCxaIrP18vgmPvDkPyfMDO-nasa
         ))}
         </ul>
 
-<<<<<<< HEAD
-e222df7542f14332bbc46a3fde194820-news
-
-.then(json => console.log(json))
-=======
 .then(json => console.log(json))
  <ul>
         {props.list.map(near_earth_objects => (
@@ -33,4 +28,3 @@ e222df7542f14332bbc46a3fde194820-news
             </ul>
 
             {this.state.articles.content}
->>>>>>> f55bb1cf4a7a71761c071a8affe119265395ef53
