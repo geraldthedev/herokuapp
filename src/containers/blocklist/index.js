@@ -1,20 +1,20 @@
 import React from 'react';
-import Blocks from '../blocks/index';
 
 
 
 
 const BlockList = (props) => {
-    return(
-        <div>
-<<<<<<< HEAD
-
-              
-=======
-           
->>>>>>> f55bb1cf4a7a71761c071a8affe119265395ef53
-        </div>
-    );
+    return ( <
+        div >
+        <
+        ul > {
+            props.list.map(near_earth_objects => ( <
+                li > { near_earth_objects.neo_reference_id } < /li>
+            ))
+        } <
+        /ul> < /
+        div >
+    )
 
 }
 

@@ -1,50 +1,31 @@
 import React, { Component } from 'react';
-import BlockList from '../blocklist/index';
+import BlockList from '../blocklist';
 
-class Blocks extends Component{
+class Blocks extends Component {
 
-<<<<<<< HEAD
-    state ={
-    totalResults: []
-}
-    componentDidMount(){
-        fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=e222df7542f14332bbc46a3fde194820')
-        .then(response => response.json())
-        .then(json => this.setState({ totalResults: json }));
-=======
+    state = {
+        near_earth_objects: []
+    }
+    componentDidMount() {
+        fetch('https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=kUogpAAKJUl6Lu846gUCxaIrP18vgmPvDkPyfMDO')
+            .then(response => response.json())
+            .then(json => console.log(json))
+            .then(json => this.setState({ near_earth_objects: json }));
 
-state ={
-        articles: []
-}
->>>>>>> f55bb1cf4a7a71761c071a8affe119265395ef53
-
- componentDidMount(){
-       fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=e222df7542f14332bbc46a3fde194820')
-        .then(response => response.json())
-        .then(json => this.setState({articles: json}))
     }
 
+    render() {
+        return (
 
-    render(){
-        return(
+            <
+            div >
 
-<<<<<<< HEAD
-            <div>
+            <
+            BlockList list = { this.state.near_earth_objects }
+            /> { this.state.near_earth_objects.length } < /
+            div >
 
-            <BlockList list={this.totalResults} />
-          The length of the array is -  {this.state.totalResults.length}
-            </div>
-=======
-<div>
-            {this.state.articles[0].title}
-
-            <BlockList />
-
-</div>
-
->>>>>>> f55bb1cf4a7a71761c071a8affe119265395ef53
-
-        );
+        )
     }
 
 }
